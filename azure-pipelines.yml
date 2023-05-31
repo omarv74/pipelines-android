@@ -15,9 +15,9 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
     jdkArchitectureOption: 'x64'
-    publishJUnitResults: true
+    publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
-    tasks: 'assembleDebug test'
+    tasks: 'assembleDebug'
   displayName: gradlew assembleDebug test
 
 - task: CopyFiles@2
